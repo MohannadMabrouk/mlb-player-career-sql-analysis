@@ -1,16 +1,27 @@
-# MLB Player & Salary Data Analysis (SQL Project)
+# MLB Player Career & Payroll Analysis Using SQL
 
-This SQL project explores Major League Baseball (MLB) player and salary data to uncover trends and insights related to player careers, school affiliations, team spending, and player demographics. The dataset includes information about players, schools, and salaries.
+Developed a comprehensive SQL-based analysis of Major League Baseball (MLB) historical data to evaluate **player career longevity, educational talent pipelines, and team payroll strategies.**
 
-The analysis is divided into four main parts, each focused on answering specific business and sports-related questions.
+The project leverages multi-table relational datasets to generate insights relevant to **talent development, financial strategy, and player demographics.**
 
 ---
 
-## Part I: School Analysis
+## Key Insights Summary
 
-- **Schools by Decade**: 1990 produced the highest MLB player (494).
-- **Top Schools**: University of Texas at Austin is the top school producer by 107 players.
-- **Top Schools by Decade**: In decade 1970 Arizona State University procuded the most players of 32.
+- Player production peaked during the 1990s, reflecting league expansion and increased scouting reach.
+- A small subset of teams consistently accounts for a disproportionate share of total salary expenditure.
+- Long-term player retention (10+ years with a single team) is rare and appears increasingly uncommon..
+- Certain universities function as sustained talent pipelines across multiple decades.
+- Player physical attributes at debut show measurable decade-over-decade shifts.
+
+
+## Part I: Education & Talent Pipeline Analysis
+This section examines the relationship between educational institutions and MLB player output.
+
+### Insights
+- **Schools by Decade**: The 1990s produced the highest number of MLB players overall. (494)
+- **Top Schools**: The University of Texas at Austin emerged as the most prolific contributor historically. (107)
+- **Top Schools by Decade**: Arizona State University led player production during the 1970s, highlighting era-specific dominance. (32)
 
 ![image](https://github.com/user-attachments/assets/fa590935-b278-4541-8e6c-4c84e9aadc71)
 ![image](https://github.com/user-attachments/assets/54c32bed-ed84-4326-8721-e713136b2fc2)
@@ -19,10 +30,12 @@ The analysis is divided into four main parts, each focused on answering specific
 
 ---
 
-## Part II: Salary Analysis
+## Part II: Team Payroll & Financial Strategy
+This section analyzes historical salary data to understand team-level spending behavior and financial growth patterns.
 
-- **Top-Spending Teams**: Highlighted the top 20% of teams by average annual spending.
-- **Cumulative Spending**: Calculated cumulative team spending over time.
+### Insights
+- **Top-Spending Teams**: Identification of the top 20% of teams by average annual payroll.
+- **Cumulative Spending**: Cumulative salary expenditure over time.
 - **Billion-Dollar Threshold**: Determined the first year each team surpassed $1 billion in total salary spending.
 
 ![image](https://github.com/user-attachments/assets/4927f974-9ab5-47ca-aa56-dc1b456998eb)
@@ -32,10 +45,12 @@ The analysis is divided into four main parts, each focused on answering specific
 ---
 
 ## Part III: Player Career Analysis
+This section evaluates career duration, team loyalty, and player movement.
 
-- **Career Length & Age**: Calculated player age at debut and final game, along with career duration.
-- **Team Transitions**: Tracked which teams players started and ended their careers with.
-- **Longevity on One Team**: Counted players who spent over a decade on the same team from start to finish.
+### Insights
+- **Career Length & Age**: Career longevity varies widely, with only a small fraction of players maintaining long-term tenure with one organization.
+- **Team Transitions**: Team changes across a career are more common than long-term retention.
+- **Longevity on One Team**: Players who start and finish with the same team represent a distinct minority, underscoring the volatility of professional sports careers.
 
 
 <img width="359" alt="image" src="https://github.com/user-attachments/assets/0f325257-c237-4471-80b0-6bb2e8a540c8" />
@@ -45,7 +60,9 @@ The analysis is divided into four main parts, each focused on answering specific
 ---
 
 ## Part IV: Player Comparison Analysis
+This section focuses on shared characteristics and population-level trends among players.
 
+### Insights
 - **Shared Birthdays**: Found players who share the same birthdate (1980–1990).
 - **Batting Hand Distribution**: Analyzed the percentage of right, left, and both-handed batters per team.
 - **Physical Trends**: Tracked average debut height and weight by decade, along with decade-over-decade changes.
@@ -57,10 +74,14 @@ The analysis is divided into four main parts, each focused on answering specific
 
 ---
 
-## Tools Used
+## Tools & Techniques
 
 - SQL (MySQL syntax)
-- Joins, Aggregates, Window Functions, CTEs, Filtering, Grouping, and Ranking
+- Complex joins across multiple tables
+- Aggregations and grouping
+- Window functions for ranking and cumulative calculations
+- Common Table Expressions (CTEs) for query clarity and reuse
+- Filtering and cohort-based analysis
 
 ---
 
